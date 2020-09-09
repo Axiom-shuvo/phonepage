@@ -1,0 +1,37 @@
+/*=========================================================================
+* Contributor:-
+* Pradipta Sarker [axiomshuvo.com]
+==========================================================================*/
+@import "boilerplate";
+@import "variables";
+@import "typography";
+@import "mixins";
+//common 
+@include anchor-color($black-tx,$anchor-color);
+
+@import "preloader";
+
+body{
+	font-family:$body-font;
+	font-size: 14px;
+	line-height: 1.42857143;
+	font-weight: 400;
+	color:$black-tx;
+	background:$white-tx;
+	position: relative;
+	@media (min-width:2099px){
+		// font-size: 1.2em;
+	}
+	@media (max-width:1499px){
+		// font-size: 0.9em;
+	}
+	@media (max-width:991px){
+		// font-size: 0.75em;
+	}
+	@media (max-width:767px){
+		// font-size: 0.6em;
+		// padding-top: 50px;
+	}
+
+}
+

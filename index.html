@@ -45,31 +45,6 @@
 		</head>
 		<body>
 
-			<!-- Preloader -->
-
-			<div class="page-loader page-loader-variant-1">
-				<div>
-					<a href="index.html" class="brand brand-md brand-inverse">
-						<img src="images/logo.png" alt="" width="145" height="30"/>
-					</a>
-
-					<div class="page-loader-body">
-						<div id="spinningSquaresG">
-							<div id="spinningSquaresG_1" class="spinningSquaresG"></div>
-							<div id="spinningSquaresG_2" class="spinningSquaresG"></div>
-							<div id="spinningSquaresG_3" class="spinningSquaresG"></div>
-							<div id="spinningSquaresG_4" class="spinningSquaresG"></div>
-							<div id="spinningSquaresG_5" class="spinningSquaresG"></div>
-							<div id="spinningSquaresG_6" class="spinningSquaresG"></div>
-							<div id="spinningSquaresG_7" class="spinningSquaresG"></div>
-							<div id="spinningSquaresG_8" class="spinningSquaresG"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- End Preloader -->
-
 			<header >
 
 				<div class="container">
@@ -77,12 +52,12 @@
 
 					
 					<div class="menu-topbar col-12">
-						<ul class="">
-							<li><a href="#"><i class="fas fa-sync-alt"></i></a></li>
-							<li><a href="#"><i class="far fa-heart"></i></a></li>
-							<li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
-							<li><a href="#"><i class="fas fa-user"></i> Register</a></li>
-							<li><a href="#">Sign In</a></li>
+						<ul class="list-inline">
+							<li class="list-inline-item" ><a href="#"><i class="fas fa-sync-alt"></i></a></li>
+							<li class="list-inline-item" ><a href="#"><i class="far fa-heart"></i></a></li>
+							<li class="list-inline-item" ><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+							<li class="list-inline-item" ><a href="#"><i class="fas fa-user"></i> Register</a></li>
+							<li class="list-inline-item" ><a href="#">Sign In</a></li>
 						</ul>
 					</div>
 
@@ -98,7 +73,7 @@
 	
 					</div>
 
-					<div class="main-menu navbar navbar-expand-lg navbar-light bg-light col-12">
+					<div class="main-menu navbar navbar-expand-lg navbar-light  col-12">
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
@@ -112,9 +87,16 @@
 								<li class="nav-item">
 									<a class="nav-link" href="#">All Products</a>
 								</li>
-								<li class="nav-item" >
-									<a  class="nav-link" href="#">Featured Brands</a>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Featured Brands
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+									</div>
 								</li>
+
 								<li class="nav-item" >
 									<a  class="nav-link" href="#">Tending Style</a>
 								</li>
@@ -139,16 +121,63 @@
 				</div>
 			</header>
 
-			<section class="products_slider">
+			<section class="products_slider_area">
 				<div class="container">
 					<div class="row">
-						<div class="media single_product">
-							<img src="images/banner.png" class="mr-3" alt="...">
-							<div class="media-body">
-								<h5 class="mt-0">Lorem ipsum is simply dummy text of</h5>
-								<p>Lorem ipsum is simply dummy text of the printing and type lorem ispumhas been industry's</p>
-								<p class="price"> <span>$</span>	200.00</p>
-								<button>Order Now</button>
+						<div class="col-12">
+							<div class="swiper-container products_slider">
+								<div class="swiper-wrapper">
+							
+									<div class="swiper-slide media single_product">
+										<img src="images/banner.png" class="mr-3" alt="...">
+										<div class="media-body">
+											<h1 class="mb-4 font-weight-bold">Lorem ipsum is simply dummy text of</h1>
+											<h4>Lorem ipsum is simply dummy text of the printing and type lorem ispumhas been industry's</h4>
+											<p class="price mt-5 font-weight-light" > <span>$</span>200.00</p>
+											<button class="btn btn-lg btn-theme rounded-0" >Order Now</button>
+										</div>
+									</div>
+									<div class="swiper-slide media single_product">
+										<img src="images/banner.png" class="mr-3" alt="...">
+										<div class="media-body">
+											<h1 class="mb-4 font-weight-bold">Lorem ipsum is simply dummy text of</h1>
+											<h4>Lorem ipsum is simply dummy text of the printing and type lorem ispumhas been industry's</h4>
+											<p class="price mt-5 font-weight-light" > <span>$</span>200.00</p>
+											<button class="btn btn-lg btn-theme rounded-0" >Order Now</button>
+										</div>
+									</div>
+									<div class="swiper-slide media single_product">
+										<img src="images/banner.png" class="mr-3" alt="...">
+										<div class="media-body">
+											<h1 class="mb-4 font-weight-bold">Lorem ipsum is simply dummy text of</h1>
+											<h4>Lorem ipsum is simply dummy text of the printing and type lorem ispumhas been industry's</h4>
+											<p class="price mt-5 font-weight-light" > <span>$</span>200.00</p>
+											<button class="btn btn-lg btn-theme rounded-0" >Order Now</button>
+										</div>
+									</div>
+									<div class="swiper-slide media single_product">
+										<img src="images/banner.png" class="mr-3" alt="...">
+										<div class="media-body">
+											<h1 class="mb-4 font-weight-bold">Lorem ipsum is simply dummy text of</h1>
+											<h4>Lorem ipsum is simply dummy text of the printing and type lorem ispumhas been industry's</h4>
+											<p class="price mt-5 font-weight-light" > <span>$</span>200.00</p>
+											<button class="btn btn-lg btn-theme rounded-0" >Order Now</button>
+										</div>
+									</div>
+									<div class="swiper-slide media single_product">
+										<img src="images/banner.png" class="mr-3" alt="...">
+										<div class="media-body">
+											<h1 class="mb-4 font-weight-bold">Lorem ipsum is simply dummy text of</h1>
+											<h4>Lorem ipsum is simply dummy text of the printing and type lorem ispumhas been industry's</h4>
+											<p class="price mt-5 font-weight-light" > <span>$</span>200.00</p>
+											<button class="btn btn-lg btn-theme rounded-0" >Order Now</button>
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="swiper-pagination"></div>
+		
 							</div>
 						</div>
 					</div>
@@ -156,43 +185,62 @@
 			</section>
 			
 
-
-			<!-- <section class="swiper-area">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-							<h1 class="text-center" > Swiper Slider</h1>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="swiper-container">
-					<div class="swiper-wrapper">
-						
-					</div>
-					
-					<div class="swiper-pagination"></div>
-
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
-
-				</div>
-
-			</section> -->
-
 			<section class="feature_products">
 				<div class="container">
 					<div class="row">
-						<div class="col-12">
-							<div class="card" style="width: 18rem;">
-								<img src="images/headset_1.png" class="card-img-top" alt="headset one">
-								<div class="card-body">
-								  <h5 class="card-title">Card title</h5>
-								  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								  <a href="#" class="btn btn-primary">Go somewhere</a>
+							<div class="col-12">
+								<h1 class="mb-5 text-center font-weight-bold sec-title " >Feature Products</h1>
+							</div>
+								
+							<div class="swiper-container feature_slider ">
+								<div class="swiper-wrapper">
+									<div class="col-4 swiper-slide">
+										<div class="card rounded-0 border-0 ">
+											<div class="card-top pt-5 pb-5">
+												<img src="images/headset_1.png" class="card-img-top d-block m-auto w-75" alt="headset one">
+											</div>
+											<div class="card-body border-bottom ">
+												<h5 class="card-title font-weight-bold">Lorem Ipsum is simply dummy</h5>
+												<p class="offer m-0"><span>$</span> <strike>500.00</strike> </p>
+												<p class="price mt-2 mb-2" > <span>$</span>300.00</p>
+												<a href="#" class="btn btn-lg btn-theme rounded-0">Buy Now</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-4 swiper-slide">
+										<div class="card rounded-0 border-0 ">
+											<div class="card-top pt-5 pb-5">
+												<img src="images/headset_2.png" class="card-img-top d-block m-auto w-75" alt="headset one">
+											</div>
+											<div class="card-body border-bottom ">
+												<h5 class="card-title font-weight-bold">Lorem Ipsum is simply dummy</h5>
+												
+												<p class="price mt-5 mb-2" > <span>$</span>300.00</p>
+												<a href="#" class="btn btn-lg btn-theme rounded-0">Buy Now</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-4 swiper-slide">
+										<div class="card rounded-0 border-0 ">
+											<div class="card-top pt-5 pb-5">
+												<img src="images/headset_3.png" class="card-img-top d-block m-auto w-75" alt="headset one">
+											</div>
+											<div class="card-body border-bottom ">
+												<h5 class="card-title font-weight-bold">Lorem Ipsum is simply dummy</h5>
+												
+												<p class="price mt-5 mb-2" > <span>$</span>300.00</p>
+												<a href="#" class="btn btn-lg btn-theme rounded-0">Buy Now</a>
+											</div>
+										</div>
+									</div>
 								</div>
-							  </div>
+							</div>
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							
+							
+							
+
 						</div>
 					</div>
 				</div>
@@ -204,7 +252,7 @@
 						<div class="col-12">
 							<div class="media single_product">
 								<div class="media-body">
-									<h1 class="mt-0">Upcoming Products</h1>
+									<h1 class="mt-0 sec-title font-weight-bold">Upcoming Products</h1>
 									<ul>
 										<li>Lorem Ispum is simply dummy text </li>
 										<li>Of the printing and typesetting industry</li>
@@ -245,13 +293,13 @@
 				</div>
 			</section>
 
-			<section class="newslatter">
+			<section class="newslatter pt-4 pb-4">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
 							<form class="form-inline">
 								<div class="form-group mb-2">
-								  <label for="staticEmail2" class="">Sign up to newslatter and Receive $20 Coupon for free Shipping </label>
+								  <label for="staticEmail2" class="font-weight-light" >Sign up to newslatter and Receive $20 Coupon for free Shipping </label>
 								  <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
 								</div>
 								<button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
@@ -261,13 +309,25 @@
 				</div>
 			</section>
 
-			<section class="review">
+			<section class="review pb-5 pt-5">
 				<div class="container">
-					<h1>Customers Review</h1>
+					<h1 class="text-center pb-5 pt-5 font-weight-bold" >Customers Review</h1>
 					<div class="row">
 						<div class="col-12">
-							<div class="customer_review">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</p>
+							<div class="swiper-container review_slider">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide customer_review text-center">
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</p>
+									</div>
+									<div class="swiper-slide customer_review text-center">
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</p>
+									</div>
+									<div class="swiper-slide customer_review text-center">
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</p>
+									</div>
+								</div>
+								<div class="swiper-pagination review-pagination"></div>
+
 							</div>
 						</div>
 					</div>
@@ -276,13 +336,15 @@
 
 			<Footer>
 				<div class="container">
-					<div class="row">
-						<div class="col-12 col-md-4 copyright">
-							@copy; synceria.com 2020
+					<div class="row pt-3 pb-3">
+						<div class="col-12 col-md-4 ">
+							<div class="copyright">
+								&copy;synceria.com 2020
+							</div>
 						</div>
 
 						<div class="col-12 col-md-4 social">
-							<ul class="list-inline" >
+							<ul class="list-inline m-0" >
 								<li class="list-inline-item" ><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 								<li class="list-inline-item" ><a href="#"><i class="fab fa-twitter"></i></a></li>
 								<li class="list-inline-item" ><a href="#"><i class="fab fa-pinterest"></i></a></li>
@@ -291,8 +353,8 @@
 							</ul>
 						</div>
 
-						<div class="col-12 col-md-4 social">
-							<ul class="list-inline" >
+						<div class="col-12 col-md-4 gateway">
+							<ul class="list-inline m-0" >
 								<li class="list-inline-item" >
 									<a href="#">
 										<img src="images/mastercard_logo.png" alt="">

@@ -4,20 +4,20 @@
 ==========================================================================*/
 @import "boilerplate";
 @import "variables";
-@import "typography";
 @import "mixins";
-//common 
-@include anchor-color($black-tx,$anchor-color);
+@import "typography";
 
-@import "preloader";
+//common 
+// @include anchor-color($black-tx,$anchor-color);
+
+// @import "preloader";
 
 body{
 	font-family:$body-font;
-	font-size: 14px;
+	font-size: 20px;
 	line-height: 1.42857143;
 	font-weight: 400;
-	color:$black-tx;
-	background:$white-tx;
+	color:$bodytx;
 	position: relative;
 	@media (min-width:2099px){
 		// font-size: 1.2em;
@@ -34,4 +34,172 @@ body{
 	}
 
 }
+.btn-theme{
+	@include btn-theme($white-tx,$anchor-color,$anchor-color-h);
+	&:hover,&:focus{
+		@include transition(all,0.3s,ease-in-out);
+	}
+}
 
+.sec-title{
+	color: #5e5e5e;
+}
+
+header{
+	font-size: 18px;
+}
+
+.main-menu{
+	font-weight: 700;
+	.nav-item{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+
+.products_slider_area{
+	background-color: #ededed;
+	.products_slider{
+		height: 587px;
+
+		.swiper-pagination-bullets{
+			top: 85%;
+		}
+		.swiper-pagination-bullet-active{
+			background:$anchor-color;
+			height: 45px;
+			border-radius: 5px;
+		}
+	}
+}
+
+.single_product {
+	padding: 30px 0;
+	.media-body{
+		padding: 70px 0px;
+	}
+
+	h1{
+		color: $anchor-color;
+		font-size: 40px;
+	}
+	h4{
+		font-size: 18px;
+	}
+
+	.price{
+		font-size: 60px;
+		letter-spacing: -5px;
+		span{
+			font-size: 18px;
+			margin-right: 10px;
+		}
+	}
+}
+
+.feature_products{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	position: relative;
+	.card{
+		.card-top{
+			background-color:#f3f3f3;
+			min-height: 450px;
+		}
+		.card-title{
+			color:#a7a7a7;
+		}
+		.offer{
+			color:$anchor-color;
+		}
+		.price{
+			font-size: 30px;
+			font-weight: 600;
+		}
+		.card-body{
+			border-width: 3px !important ;
+		}
+	}
+
+	.swiper-button-next, .swiper-button-prev{
+		top: 15%;
+		color: #b8b8b8;
+		&:hover,&:focus{
+			color:$anchor-color;
+		}
+	}
+	.swiper-button-next{
+		right: 7%;
+		&::after{
+			font-size:30px;
+			font-family: "Font Awesome 5 Free"; 
+			font-weight: 900; 
+			content: "\f105";
+		}
+	}
+	.swiper-button-prev{
+		left: auto;
+		right: 9%;
+		&::after{
+			font-size:30px;
+			font-family: "Font Awesome 5 Free"; 
+			font-weight: 900; 
+			content: "\f104";
+		}
+	}
+
+}
+
+.newslatter{
+	background: $anchor-color;
+	color:$white-tx;
+}
+
+
+.review{
+	min-height: 581px;
+	background-blend-mode: revert;
+	background-image: url(../../images/testimonial_bg.png);
+	background-color:rgba(0, 0, 0, 0.5);
+	color:#fff;
+	.review_slider{
+		min-height: 250px;
+
+		.swiper-pagination-bullet{
+			height: 12px;
+			width: 12px;
+			background: #fff;
+			opacity: 0.7;
+		}
+		.swiper-pagination-bullet{
+			margin: 0 6px;
+		}
+		.swiper-pagination-bullet-active{
+			background: $anchor-color ;
+		}
+	}
+	.customer_review{
+		font-size: 24px;
+	}
+}
+
+footer{
+	background-color: #eeeeee;
+
+	.copyright{
+		font-size: 18px;
+		color: #a8a8a8;
+		padding-top: 10px;
+	}
+
+	.social{
+		.list-inline-item{
+			margin-right: 1.3rem;
+		}
+		a{
+			color:#929292;
+			font-size: 25px;
+		}
+	}
+}

@@ -17,7 +17,7 @@
     align-items: center;
     padding: 0 25px;
     z-index: 9999999;
-    background: $white-tx;
+    // background: $white-tx;
     transition: .3s all ease;
 
     .page-loader-body{
@@ -74,7 +74,7 @@
 		    	left: 50%;
 	    		opacity: 1;
 				// transform: translateX(-50%);
-				@include transform-translateX(-50%);
+				@include transX(-50%);
 		    }
 		    li.hide-icon {
 		    	left: -100%;

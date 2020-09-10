@@ -1,41 +1,12 @@
 //all typogrphay 
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,600,700');
 
 h1,h2,h3,h4,h5,h6{
 	margin: 0;
-	color:$black-tx;
-	font-weight: 500;
 }	
-h1{
-	font-size: 3.625em;
-	@media(max-width:1399px){
-	    font-size: 2.2em;
-	}
-}
-h2{
-	font-size: 2.563em;
-	font-weight: 300;
-	@media(max-width:1399px){
-		font-size: 2em;
-	}
-}
-h3{
-	font-size: 2.063em;
-	@media(max-width:1399px){
-		font-size: 1.6em;
-	}
-}
-
-h4{
-	font-size: 1em;
-}
-
-h6{
-	font-size: 1em;
-}
 
 a,a:hover,a:focus{
-	@inlcude transition(all,0.3s,ease-in-out);
+	@include transition(all,0.3s,ease-in-out);
 }
 
 .animated{
@@ -43,28 +14,4 @@ a,a:hover,a:focus{
 	-webkit-animation-delay:0.5s;
 	animation-duration:2s;
 	-webkit-animation-duration:2s;
-}
-
-.light-weight{
-	font-weight:300;
-}
-
-.thin-weight{
-	font-weight:100;
-}
-
-.text-black{
-	color:$black-tx;
-}
-
-.text-white{
-	color:$white-tx !important;
-}
-
-
-@media(max-width:991px){
-	.pad-sm{
-		padding-left:5px;
-		padding-right:5px;
-	}
 }

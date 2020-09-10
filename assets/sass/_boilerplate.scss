@@ -33,11 +33,11 @@ html {
     line-height: 1.4;
 }
 ::-moz-selection {
-    background: #b3d4fc;
+    background: $anchor-color;
     text-shadow: none;
 }
 ::selection {
-    background: #b3d4fc;
+    background: $anchor-color;
     text-shadow: none;
 }
 hr {

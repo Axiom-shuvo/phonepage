@@ -49,26 +49,37 @@
 
 				<div class="container">
 					<div class="row">
-
-					
-					<div class="menu-topbar col-12">
-						<ul class="list-inline">
+					<div class="menu-topbar col-12 pt-2 pb-2 d-flex justify-content-end"">
+						<ul class="list-inline m-0">
 							<li class="list-inline-item" ><a href="#"><i class="fas fa-sync-alt"></i></a></li>
 							<li class="list-inline-item" ><a href="#"><i class="far fa-heart"></i></a></li>
-							<li class="list-inline-item" ><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
-							<li class="list-inline-item" ><a href="#"><i class="fas fa-user"></i> Register</a></li>
-							<li class="list-inline-item" ><a href="#">Sign In</a></li>
+							<li class="list-inline-item" ><a href="#"><i class="fas fa-shopping-bag"></i> <span class="count">5</span> </a></li>
+							<li class="list-inline-item value" ><a href="#"><span>$</span> 3256.99</a></li>
+							<li class="list-inline-item reg" ><a href="#"><i class="fas fa-user"></i> <span>Register</span> </a> or <a href="#"><span>Sign In</span></a></li>
+							
 						</ul>
 					</div>
-
+					</div>
+				</div>
+				<hr class="m-0" >
+				<div class="container">
+					<div class="row">
 					<div class="menubar navbar col-12">
 						<a class="navbar-brand" href="#">
 							<img src="images/logo.png" alt="phonelogo">
 						</a>
 
 						<form class="form-inline my-2 my-lg-0">
-							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+							<input class="form-control rounded-0" type="search" placeholder="Search Your Products" aria-label="Search">
+							<select class="custom-select rounded-0" name="brand" id="brand">
+								<option selected>Select Brand</option>
+								<option value="beats">Beats</option>
+								<option value="sony">Sony</option>
+								<option value="apple">Apple</option>
+							</select>
+							<button class="btn my-2 my-sm-0 rounded-0" type="submit">
+								<i class="fas fa-search fa-2x"></i>
+							</button>
 						</form>
 	
 					</div>
@@ -185,14 +196,14 @@
 			</section>
 			
 
-			<section class="feature_products">
+			<section class="feature_products position-relative">
 				<div class="container">
 					<div class="row">
 							<div class="col-12">
 								<h1 class="mb-5 text-center font-weight-bold sec-title " >Feature Products</h1>
 							</div>
 								
-							<div class="swiper-container feature_slider ">
+							<div class="swiper-container feature-slider ">
 								<div class="swiper-wrapper">
 									<div class="col-4 swiper-slide">
 										<div class="card rounded-0 border-0 ">
@@ -235,49 +246,31 @@
 									</div>
 								</div>
 							</div>
-								<div class="swiper-button-next"></div>
-								<div class="swiper-button-prev"></div>
-							
-							
-							
+								<div class="swiper-button-next feature-slider-next slider-nav-next"></div>
+								<div class="swiper-button-prev feature-slider-prev slider-nav-prev"></div>
 
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="upcoming_products">
+			<section class="upcoming_products  pt-5 pb-5">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<div class="media single_product">
-								<div class="media-body">
-									<h1 class="mt-0 sec-title font-weight-bold">Upcoming Products</h1>
-									<ul>
+							<div class="media ">
+								<div class="media-body pt-5 ">
+									<h1 class="mt-0 mb-3 sec-title font-weight-bold">Upcoming Product</h1>
+									<ul class="list-unstyled pb-3">
 										<li>Lorem Ispum is simply dummy text </li>
 										<li>Of the printing and typesetting industry</li>
 										<li>Lorem ipsum has been the</li>
 										<li>industry's standard dummy text ever since</li>
 									</ul>
-									<button>Order Now</button>
+									<button class="btn btn-lg btn-theme rounded-0 mt-5" >Order Now</button>
 								</div>
-								<img src="images/headset_upcoming.png" class="mr-3" alt="...">
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="flash-sells">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<div class="media single_product">
-								<img src="images/products_1.png" class="mr-3" alt="...">
-								<div class="media-body">
-									<h5 class="mt-0">Lorem ipsum is simply dummy text of</h5>
-									<p class="price">20%<span>off</span></p>
-									<button>Buy Now</button>
+								<div class="media-bt">
+									<img src="images/headset_upcoming.png" class="ml-3 img-fluid" alt="...">
 								</div>
 							</div>
 						</div>
@@ -285,24 +278,120 @@
 				</div>
 			</section>
 
-			<section class="client_carosol">
+			<section class="flash-sells position-relative pt-3">
 				<div class="container">
 					<div class="row">
+						<h1 class="col-12 text-center pb-5 pt-5 font-weight-bold" >Flash Sell</h1>
+						<div class="swiper-container flash-slider ">
+							<div class="swiper-wrapper">
+
+								<div class="col-6 swiper-slide">
+									<div class="media single_product p-3">
+										<div class="top-media">
+											<img src="images/products_1.png" class="mr-3" alt="...">
+										</div>
+										<div class="media-body">
+											<h5 class="mt-0">Lorem ipsum is simply dummy text of</h5>
+											<p class="price font-weight-bold  ">20%<span>off</span></p>
+											<button class="btn btn-lg btn-theme rounded-0" >Buy Now</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 swiper-slide">
+									<div class="media single_product p-3">
+										<div class="top-media">
+											<img src="images/products_2.png" class="mr-3" alt="...">
+										</div>
+										<div class="media-body">
+											<h5 class="mt-0">Lorem ipsum is simply dummy text of</h5>
+											<p class="price font-weight-bold  ">20%<span>off</span></p>
+											<button class="btn btn-lg btn-theme rounded-0" >Buy Now</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 swiper-slide">
+									<div class="media single_product p-3">
+										<div class="top-media">
+											<img src="images/products_3.png" class="mr-3" alt="...">
+										</div>
+										<div class="media-body">
+											<h5 class="mt-0">Lorem ipsum is simply dummy text of</h5>
+											<p class="price font-weight-bold  ">20%<span>off</span></p>
+											<button class="btn btn-lg btn-theme rounded-0" >Buy Now</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 swiper-slide">
+									<div class="media single_product p-3">
+										<div class="top-media">
+											<img src="images/products_4.png" class="mr-3" alt="...">
+										</div>
+										<div class="media-body">
+											<h5 class="mt-0">Lorem ipsum is simply dummy text of</h5>
+											<p class="price font-weight-bold  ">20%<span>off</span></p>
+											<button class="btn btn-lg btn-theme rounded-0" >Buy Now</button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+							<div class="swiper-button-next flash-slider-next slider-nav-next"></div>
+							<div class="swiper-button-prev flash-slider-prev slider-nav-prev"></div>
 
 					</div>
 				</div>
 			</section>
 
-			<section class="newslatter pt-4 pb-4">
+			<section class="client_carosol pt-5 pb-5">
+				<div class="container">
+					<div class="row">
+						<div class="swiper-container client-slider">
+							<div class="swiper-wrapper pt-5 pb-5 ">
+								<div class="swiper-slide">
+									<a href="#">
+										<img class="img-fluid" src="images/client_1.png" alt="client 1">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#">
+										<img class="img-fluid" src="images/client_2.png" alt="client 1">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#">
+										<img class="img-fluid" src="images/client_3.png" alt="client 1">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#">
+										<img class="img-fluid" src="images/client_4.png" alt="client 1">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#">
+										<img class="img-fluid" src="images/client_5.png" alt="client 1">
+									</a>
+								</div>
+							</div>
+							<div class="swiper-pagination client-pagination theme-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="newslatter pt-5 pb-5">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<form class="form-inline">
-								<div class="form-group mb-2">
-								  <label for="staticEmail2" class="font-weight-light" >Sign up to newslatter and Receive $20 Coupon for free Shipping </label>
-								  <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+							<form class="form-inline d-flex justify-content-between">
+								<label for="staticEmail2" class="font-weight-light " > <i class="fas fa-paper-plane fa-2x mr-3"></i>	 Sign up to newslatter and Receive $20 Coupon for free Shipping </label>
+								<div class="form-group ">
+								  <input type="email" class="form-control border-0 rounded-0" id="inputemail" placeholder="Your Email ID">
+								  <button type="submit" class="btn rounded-0">Sign Up</button>
 								</div>
-								<button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+								
 							  </form>
 						</div>
 					</div>
@@ -326,7 +415,7 @@
 										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</p>
 									</div>
 								</div>
-								<div class="swiper-pagination review-pagination"></div>
+								<div class="swiper-pagination review-pagination theme-pagination"></div>
 
 							</div>
 						</div>

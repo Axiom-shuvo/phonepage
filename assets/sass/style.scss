@@ -2,9 +2,9 @@
 * Contributor:-
 * Pradipta Sarker [axiomshuvo.com]
 ==========================================================================*/
-@import "boilerplate";
 @import "variables";
 @import "mixins";
+@import "boilerplate";
 @import "typography";
 
 //common 
@@ -35,6 +35,7 @@ body{
 
 }
 .btn-theme{
+	min-width: 173px;
 	@include btn-theme($white-tx,$anchor-color,$anchor-color-h);
 	&:hover,&:focus{
 		@include transition(all,0.3s,ease-in-out);
@@ -44,9 +45,110 @@ body{
 .sec-title{
 	color: #5e5e5e;
 }
+.dropdown-item{
+	&.active,&:active,&:focus,&:hover{
+		background-color: $anchor-color;
+		color: $white-tx;
+	}
+}
+.dropdown-toggle{
+	&::after{
+		content:"\f078";
+		vertical-align: initial;
+		font-family: "Font Awesome 5 Free"; 
+		font-weight: 900;
+		border: none;
+		color: $anchor-color;
+	}
+}
+
+.theme-pagination{
+	.swiper-pagination-bullet{
+		height: 12px;
+		width: 12px;
+		background: #fff;
+		opacity: 0.7;
+	}
+	.swiper-pagination-bullet{
+		margin: 0 6px;
+	}
+	.swiper-pagination-bullet-active{
+		background: $anchor-color ;
+	}
+}
 
 header{
 	font-size: 18px;
+	.menu-topbar{
+		.list-inline-item{
+			margin-right: 1.5rem;
+			a{
+				font-size: 20px;
+				color: #cbcbcb;
+				text-decoration:none;
+			}
+			&.value a{
+				color:initial;
+				span{
+					color: $anchor-color;
+				}
+			}
+			
+			.count{
+				background-color: $anchor-color;
+				color:$white-tx;
+				width: 25px;
+				display: inline-block;
+				height: 25px;
+				margin: 0 auto;
+				margin-left: -6px;
+				border-radius: 50%;
+				text-align: center;
+			}
+
+			&.reg{
+				a span{
+					color: initial;
+				}
+			}
+		}
+	}
+
+	.menubar{
+		form{
+			.form-control{
+				height: 50px;
+				width: 550px;
+			}
+			.custom-select{
+				height: 50px;
+				width: 180px;
+				&:option[value]{
+					background-color:$anchor-color;
+				}
+				// position: relative;
+				// display: none;
+				// &::after{
+				// 	position: absolute;
+				// 	content:"\f078";
+				// 	vertical-align: initial;
+				// 	font-family: "Font Awesome 5 Free"; 
+				// 	font-weight: 900;
+				// 	border: none;
+				// 	color: $anchor-color;
+				// 	top: 14px;
+				// 	right: 10px;
+				// 	width: 0;
+				// 	height: 0;
+				// }
+			}
+			.btn{
+				background-color: $anchor-color;
+				color: $white-tx;
+				padding: 0.375rem .5rem;
+			}
+		}
+	}
 }
 
 .main-menu{
@@ -98,10 +200,37 @@ header{
 	}
 }
 
+
+	.slider-nav-next, .slider-nav-prev{
+		top: 15%;
+		color: #b8b8b8;
+		&:hover,&:focus{
+			color:$anchor-color;
+		}
+	}
+	.slider-nav-next{
+		right: 7%;
+		&::after{
+			font-size:30px;
+			font-family: "Font Awesome 5 Free"; 
+			font-weight: 900; 
+			content: "\f105";
+		}
+	}
+	.slider-nav-prev{
+		left: auto;
+		right: 9%;
+		&::after{
+			font-size:30px;
+			font-family: "Font Awesome 5 Free"; 
+			font-weight: 900; 
+			content: "\f104";
+		}
+	}
+
 .feature_products{
 	padding-top: 80px;
 	padding-bottom: 80px;
-	position: relative;
 	.card{
 		.card-top{
 			background-color:#f3f3f3;
@@ -122,38 +251,100 @@ header{
 		}
 	}
 
-	.swiper-button-next, .swiper-button-prev{
-		top: 15%;
-		color: #b8b8b8;
-		&:hover,&:focus{
-			color:$anchor-color;
-		}
-	}
-	.swiper-button-next{
-		right: 7%;
-		&::after{
-			font-size:30px;
-			font-family: "Font Awesome 5 Free"; 
-			font-weight: 900; 
-			content: "\f105";
-		}
-	}
-	.swiper-button-prev{
-		left: auto;
-		right: 9%;
-		&::after{
-			font-size:30px;
-			font-family: "Font Awesome 5 Free"; 
-			font-weight: 900; 
-			content: "\f104";
-		}
-	}
+}
 
+.upcoming_products{
+	background-color: #f7f7f7;
+	position: relative;
+	overflow: hidden;
+	
+
+	.media-bt{
+		position: absolute;
+		top: -63%;
+		right: 0;
+		width: 60%
+	}
+	.media-body{
+		h1{
+			font-size: 48px;
+		}
+
+		ul li {
+			position: relative;
+			padding-left: 20px;
+			margin-bottom: 1rem;
+			&::before{
+				content: "•";
+				color: #e4474a;
+				font-weight: 900;
+				font-size: xx-large;
+				position: absolute;
+				margin-right: 1rem;
+				top: 50%;
+				left: 0;
+				@include transY(-50%);
+			}
+		}
+	}
+}
+
+.flash-sells{
+	.flash-slider{
+		height:630px ;
+	}
+	.single_product{
+		background-color: #f6f6f6;
+		.media-body{
+			padding: 30px 0;
+			h5{
+				font-size: 25px;
+			}
+			.price{
+				color: $anchor-color ;
+				font-size: 48px;
+				letter-spacing: normal;
+				span{
+					color:initial;
+					font-weight: normal;
+					margin-left: 8px;
+				}
+			}
+		}
+	}
+}
+
+.client_carosol{
+	
+		.swiper-pagination-bullet{
+			background:#bcbbbb;
+		}
+		.swiper-pagination-bullet-active{
+			background: $anchor-color;
+		}
+	
 }
 
 .newslatter{
 	background: $anchor-color;
 	color:$white-tx;
+	form{
+		.form-control{
+			// min-width: 240px;
+			height: auto;
+			padding: 0.85rem 1.75rem;
+		}
+		.btn{
+			// min-width: 130px;
+			padding: 0.85rem 1.75rem;
+			background-color: #353535;
+			color:#fff;
+			&:hover,&:focus{
+				background-color: #141414;
+				@include transition(all,0.3s,ease-in-out);
+			}
+		}
+	}
 }
 
 
@@ -166,23 +357,14 @@ header{
 	.review_slider{
 		min-height: 250px;
 
-		.swiper-pagination-bullet{
-			height: 12px;
-			width: 12px;
-			background: #fff;
-			opacity: 0.7;
-		}
-		.swiper-pagination-bullet{
-			margin: 0 6px;
-		}
-		.swiper-pagination-bullet-active{
-			background: $anchor-color ;
-		}
+		
 	}
 	.customer_review{
 		font-size: 24px;
 	}
 }
+
+
 
 footer{
 	background-color: #eeeeee;
